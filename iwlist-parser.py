@@ -5,6 +5,7 @@ import sys
 
 cells = []
 
+
 def generateData():
     wlan = sys.argv[1]  # setting wireless scanning interface
 
@@ -28,7 +29,6 @@ def checkIfCell(data):
 
 def getCellMac(data):
     return data.split("Address:")[1].strip()
-
 
 
 def usage():
